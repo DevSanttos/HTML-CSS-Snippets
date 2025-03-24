@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Testando o meu Formulário</p>
+        <p>
+            <!-- Formulário para texto -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </p>
+        
+        <p>
+            <!-- Formulário para checkbox -->
+            <label for="programador">Sou programador:</label>
+            <input type="checkbox" id="programador" name="dev" value="sim">
+        </p>
+        
+        <p>
+            <!-- Formulário para checkbox c/ 1 resposta-->
+             Gênero: 
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="sim">
+            <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="sim">
+            <br>
+            <label for="outros">Outros</label>
+            <input type="radio" id="outros" name="genero" value="sim">
+        </p>
+
+        <p>
+            <!-- Formulário para Data -->
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date">    
+        </p>
+        
+        <p>
+        <!-- Formulário para Data e hora -->
+            <label for="dateTime">Data e hora:</label>
+            <input type="datetime-local" id="dateTime" name="dateTime" value="2020-03-20T20:00">
+        </p>
+        
+        <p>
+        <!-- Formulário para tempo -->
+            <label for="time">Tempo:</label>
+            <input type="time" id="time" name="time" value="20:00:00">
+        </p>
+        
+        <p>
+        <!-- Formulário para cor -->
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor" name="cor" value="#0000FF">
+        </p>
+        
+        <p>
+        <!-- Formulário para email -->
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="ex.: email@email.com" required>
+        </p>
+        
+        <p>
+        <!-- Formulário para números -->
+            <label for="number">Número:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um número" required min="10" max="50" step="5">
+        </p>
+        
+        <p>
+        <!-- Formulário para senha -->
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        </p>
+        
+        <p>
+        <!-- Formulário para arquivos -->
+            <label for="file">Arquivo:</label>
+            <input type="file" id="file" name="fileInput" accept="image/*" multiple>
+        </p>
+
+        <p>
+        <!-- Formulário para range -->
+            <label for="range">range:</label>
+            <input type="range" id="range" name="range">
+        </p>
+
+        <p>
+        <!-- Formulário para url -->
+            <label for="search">Sua url</label>
+            <input type="search" id="search" name="search" placeholder="search"> 
+        </p>
+
+        <p>
+        <!-- Botões para enviar e resetar -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+    </form>
+</body>
+</html>
