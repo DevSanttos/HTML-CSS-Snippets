@@ -4,15 +4,29 @@
     box-sizing: border-box  ;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 nav {
-    background-color: rgb(98, 118, 119);
+    background-color: #10403B;
     justify-content: space-between;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+ul {
+    margin: 5px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
 }
 
 #links {
-    display: flex;
-    list-style: none;
+    justify-content: start;
 }
 
 #links li {
@@ -21,21 +35,53 @@ nav {
 }
 
 nav a {
-    padding: 15px;
+    padding: 15px 30px;
     display: block;
-    color: black;
+    color:#BFBFBF;
     font-family:'Times New Roman', Times, serif;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 nav a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    color: #4C5958;
+    transition: 0.3s ease;
 }
 
 #logo {
-    display: flex;
-    list-style: none;
-    justify-content: center;
+    justify-content: end;
 }
 
+.btnSignUp {
+    display: inline-block;
+    background-color: #eaeaf000;
+    color: #BFBFBF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btnSignUp:hover {
+    background-color: rgba(240, 248, 255, 0);
+    color: #4C5958;
+    transition: 0.4s ease-in-out;
+}
+
+.btnLogin {
+    display: inline-block;
+    background-color: #19191a;
+    color: #BFBFBF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    outline: 1px solid #4C5958;
+    outline-offset: 2px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btnLogin:hover {
+    color: #979797;
+    background-color: #4C5958;
+    transition: 0.4s ease;
+}
